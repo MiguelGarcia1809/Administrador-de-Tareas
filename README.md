@@ -10,4 +10,4 @@ Se utilizaron:
 3. Base de Datos
    - MySQL
    
-![image](https://user-images.githubusercontent.com/108234872/219882634-1b2abb19-a662-41bc-906e-70eb04162d7f.png)
+![image](https://user-images.githubusercontent.com/108234872/219884901-2789e5b9-c5fa-4226-aa6f-639ec55f6c5a.png)
