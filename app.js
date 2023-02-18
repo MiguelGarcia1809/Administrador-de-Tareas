@@ -19,15 +19,29 @@ $(document).ready(function () {
                     let tareas = JSON.parse(response);
                     let template = "";
                     tareas.forEach(tarea => {
-                        template += `<li>
-                                        ${tarea.nombre}
-                                    </li>`
+                    template += `<tr task-id=${tarea.id}>
+                                    <td>${tarea.id}</td>
+                                    <td>${tarea.nombre}</td>
+                                    <td>${tarea.descripcion}</td>
+                                    <td>
+                                        <button class="btn btn-primary task-edit">
+                                            Editar
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger task-delete">
+                                            Borrar
+                                            </button>
+                                    </td>
+                        
+                                </tr>`;
                     });
-
-                    $('#container').html(template);
-                    $('#task-result').show();
+                    $('#tasks').html();
+                    $('#tasks').html(template);
                 }
             });
+        } else {
+            fetchTareas();
         }
     });
 
